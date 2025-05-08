@@ -45,7 +45,7 @@ if __name__ == "__main__":
     robot = Robot()
     robot.move()
 
-    print("\n🔋 Зміна стану і стратегії...\n")
+    print("\n Зміна стану і стратегії...\n")
     robot.set_state(LowBatteryState())
     robot.set_strategy(FastWalk())
     robot.move()
