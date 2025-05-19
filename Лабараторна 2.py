@@ -4,7 +4,7 @@ from abc import ABC, abstractmethod
 class Employee(ABC):
     @abstractmethod
     def calculate_salary(self):
-        pass
+        raise NotImplementedError("Метод calculate_salary() має бути реалізований у підкласі.")
 
 class FullTimeEmployee(Employee):
     def __init__(self, monthly_salary):
